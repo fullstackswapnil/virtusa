@@ -1,0 +1,321 @@
+// us cities and state 
+https://raw.githubusercontent.com/kelvins/US-Cities-Database/master/us_cities.sql
+
+Register Hospital
+url : localhost:5001/api/user/registerHospital
+
+Request body
+{
+  
+      "email" : "swapnilsakha2@gmail.com",
+      "password": "123456789",
+      "referral_code_id" : "121211"
+    
+}
+
+Response body
+{
+    "status": "success",
+    "status_code": 200,
+    "message": "Email registered successfully.",
+    "data": {
+        "success": true,
+        "data": [
+            {
+                "email": "swapnilsakha2@gmail.com",
+                "password": "123456789",
+                "referral_code_id": "121211",
+                "user_id": 7,
+                "hospital_id": 2
+            }
+        ]
+    }
+}
+
+Register Vet 
+url : localhost:5001/api/user/registerVet
+{
+    "status": "success",
+    "status_code": 200,
+    "message": "Email registered successfully.",
+    "data": {
+        "success": true,
+        "data": [
+            {
+                "email": "swapnilsakha2@gmail.com",
+                "password": "123456789",
+                "referral_code_id": "121211",
+                "user_id": 12,
+                "vet_id": 1
+            }
+        ]
+    }
+}
+
+//////////////////////////
+ 
+
+// Update Hospital profile 
+// url : localhost:5001/api/user/updateHospitalprofile
+Request Body
+{
+	"hospital_id":"1",
+	 "user_id" :"6",
+	"fullName"  : "SWAPNIL kULKARNI",
+	"hospitalAddress" : "E 502 SWAPNIL LOK SOCIETY KALEPADAL",
+	"phone_number": "898989899",
+	"parameters.city": "pune",
+	"parameters.state_id" : "1",
+	"parameters.zipcode" : "425001",
+	"hearAboutRoo" : { 
+					"value" : "12" 
+	
+				   }, 
+  
+	"animal_type_id"  : "121", 
+	"knowYourHospital" :  { 
+					  	"meticulous_pace" : "1",
+					    "fast_pace_environment":"2" , 
+						"works_independently ": "5",
+						"works_as_a_team" : "4",
+						"takes_on_surgeries " :"1",
+						"hospital_cleanliness":"4",
+						"staff_communication":"5",
+						"client_communication":"3", 
+						"character_type_id":"1",
+						"hospitalSkills":"ADDITIONAL SKILLSSS"
+					},	
+
+	"hospital_name":"SFDSFKJ pVT lTD",
+	"hospital_website":"WWW.COMPLIANCE.COM",
+	"role_id" : "1",     
+	"stripe_id": "21212",
+	"hospitalData":{
+						"is_aaha_accredited" : "TRUE",
+						"averageTechPerDVMperDay" : {
+														"value" : "1"
+													},
+						"media_director":"SWAPNIL",
+						"averageTransactionPerDay" : {
+														"value": "5"	
+													 },
+						"transactionPerDay": {
+													"value":"5"
+											},
+						"averageSurgeryPerDay": {
+												"value" : "4"
+											}	
+					},
+	"average_no_of_tech_per_dvm" : "5",
+	 "lunch_break_fast_setup" : "1",
+	 "appointment_flow": "4",
+	 "proficiency" : "4",
+	"type_of_hospital" : "SSS"
+}
+
+
+Response Body 
+{
+    "status": "success",
+    "status_code": 200,
+    "message": "Hospital profile updated successfully.",
+    "data": {
+        "success": true,
+        "data": [
+            {
+                "hospital_id": "1",
+                "user_id": "6",
+                "fullName": "SWAPNIL kULKARNI",
+                "hospitalAddress": "E 502 SWAPNIL LOK SOCIETY KALEPADAL",
+                "phone_number": "898989899",
+                "parameters.city": "pune",
+                "parameters.state_id": "1",
+                "parameters.zipcode": "425001",
+                "hearAboutRoo": {
+                    "value": "12"
+                },
+                "animal_type_id": "121",
+                "knowYourHospital": {
+                    "meticulous_pace": "1",
+                    "fast_pace_environment": "2",
+                    "works_independently ": "5",
+                    "works_as_a_team": "4",
+                    "takes_on_surgeries ": "1",
+                    "hospital_cleanliness": "4",
+                    "staff_communication": "5",
+                    "client_communication": "3",
+                    "character_type_id": "1",
+                    "hospitalSkills": "ADDITIONAL SKILLSSS"
+                },
+                "hospital_name": "SFDSFKJ pVT lTD",
+                "hospital_website": "WWW.COMPLIANCE.COM",
+                "role_id": "1",
+                "stripe_id": "21212",
+                "hospitalData": {
+                    "is_aaha_accredited": "TRUE",
+                    "averageTechPerDVMperDay": {
+                        "value": "1"
+                    },
+                    "media_director": "SWAPNIL",
+                    "averageTransactionPerDay": {
+                        "value": "5"
+                    },
+                    "transactionPerDay": {
+                        "value": "5"
+                    },
+                    "averageSurgeryPerDay": {
+                        "value": "4"
+                    }
+                },
+                "average_no_of_tech_per_dvm": "5",
+                "lunch_break_fast_setup": "1",
+                "appointment_flow": "4",
+                "proficiency": "4",
+                "type_of_hospital": "SSS"
+            }
+        ]
+    }
+}
+             
+ 
+ / Update Vet profile 
+// url : localhost:5001/api/user/updateVetprofile
+
+{
+ "vet_school" : "SSBT COET",
+ "graduation_year" : "11061987",
+ "years_of_practise" : "5",
+ "licence_state_id":"58",                             
+ "specialization_id": "5",
+ "procedure_type_id" : "1",
+ "surgery_proficiencey" : "1", 
+ "profile_photo_path":"ffdsf",   
+ "routing_number":"2011112",
+ "account_number":"899989",  
+ "account_type":"Personal",  
+"vet_id":"1",
+ "user_id" :"12",
+"fullName"  : "SWAPNIL kULKARNI",
+"hospitalAddress" : "E 502 SWAPNIL LOK SOCIETY KALEPADAL",
+"phone_number": "898989899",
+"city": "pune",
+"state_id" : "1",
+"zipcode" : "425001",
+	"hearAboutRoo" : { 
+					    "value" : "12" 
+				   }, 
+  
+	"animal_type_id"  : "121", 
+	"knowYourHospital" :  { 
+					  	"meticulous_pace" : "1",
+					    "fast_pace_environment":"2" , 
+						"works_independently ": "5",
+						"works_as_a_team" : "4",
+						"takes_on_surgeries " :"1",
+						"hospital_cleanliness":"4",
+						"staff_communication":"5",
+						"client_communication":"3", 
+						"character_type_id":"1",
+						"hospitalSkills":"ADDITIONAL SKILLSSS"
+					},	
+
+	"hospital_name":"SFDSFKJ pVT lTD",
+	"hospital_website":"WWW.COMPLIANCE.COM",
+	"role_id" : "1",     
+	"stripe_id": "21212",
+	"hospitalData":{
+						"is_aaha_accredited" : "TRUE",
+						"averageTechPerDVMperDay" : {
+														"value" : "1"
+													},
+						"media_director":"SWAPNIL",
+						"averageTransactionPerDay" : {
+														"value": "5"	
+													 },
+						"transactionPerDay": {
+													"value":"5"
+											},
+						"averageSurgeryPerDay": {
+												"value" : "4"
+											}	
+					},
+	"average_no_of_tech_per_dvm" : "5",
+	 "lunch_break_fast_setup" : "1",
+	 "appointment_flow": "4",
+	 "proficiency" : "4",
+	"type_of_hospital" : "SSS"
+}            
+
+
+imp sql 
+
+ `SELECT  json_object(
+                    'state_id', 
+                    state.`id`, 
+                    'state_name',
+                    state.`state_name`, 
+                     
+                    
+                    'cities', 
+                    
+                    (select cast(concat('[',
+                                    GROUP_CONCAT( json_object( 'city_id',id, 
+                                                                'city_name', `city`
+                                                                )),
+                                    ']')  as JSON)
+                    FROM city 
+                    WHERE state.id = city.state_id)) as json_definition 
+                    FROM state`;
+select json_object(
+  'state_id',state.id ,
+  'cities',(select CAST(CONCAT('[',
+                GROUP_CONCAT(
+                  JSON_OBJECT(
+                    'city_id',id )),
+                ']')
+         AS JSON) from city where state_id = state.id)
+
+ ) from state p;
+
+
+
+ // media type
+ // roll_id
+
+
+
+ `<div style="border:1px solid #9886d1; font-size:16px; color:#333333; padding:30px; width:640px; font-family:arial">
+<p>Thank you for submitting your relief shift! Here is a summary of your shift:</p>
+<div style="padding: 0 10px; overflow:hidden;">
+<p style="color:#535353">
+Date: <strong>12:00 AM-10:00 AM
+(Est. lunch 12:30 AM)</strong>
+</p>
+<p style="color:#535353">
+Shift: <strong>Shift</strong>
+</p>
+<p style="color:#535353">
+Expected Appointment Types: <strong>Test</strong>
+</p>
+<p style="color:#535353">
+Expected Number of Appointments: <strong>Test</strong>
+</p>
+<p style="color:#535353">
+Surgery Expected: <strong>Test</strong>
+</p>
+<p style="color:#535353">
+Shift Price: <strong>$123</strong>
+</p>
+</div>
+
+
+<p>We will let you know if any vets confirm any of your shifts through an email confirmation. You can also log in at any time to view any vet confirmations.</p>
+<p>Once a vet confirms a slot, you have a time window that you MUST confirm. We will send you an email as soon as a vet confirmation is submitted. If you do not confirm, then the vet is not committed to your hospital shift.</p>
+<p>Remember, as we are just getting started up, don’t be discouraged if there are no shifts fulfilled, we’re actively recruiting more vets to join our platform, so hang in there!</p>
+<p>If you need to make any changes and no vet has been confirm, you may remove the shift. Once the shift has been confirmed, you must contact us for any changes.</p>
+
+<p>Call or text us at ${responsebody} </p>
+
+<p>-Roo Team </p>
+
+</div>`

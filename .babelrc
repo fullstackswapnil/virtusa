@@ -1,0 +1,22 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    "transform-class-properties",
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "lib": "./modules/lib",
+        "services": "./modules/services",
+        "components": "./modules/validation", 
+        "config": "./src/config",
+        "middlewares" : "./src/modules/middlewares"
+      }
+    }]
+  ]
+}
