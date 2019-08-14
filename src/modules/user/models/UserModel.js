@@ -10,7 +10,7 @@ class UserModel {
             let date           = datetime.create();
             let created_on     = date.format( "Y-m-d H:M:S" );
     
-            let sqlQuery       = "INSERT INTO user ( email_id, first_name, last_name, mobile_number, created_on ) VALUES ( ?, ?, ?, ?, ? )";
+            let sqlQuery       = "INSERT INTO users ( email_id, first_name, last_name, mobile_number, created_on ) VALUES ( ?, ?, ?, ?, ? )";
             let sqlParameter   = [ parameters.email_id, parameters.first_name, parameters.last_name, parameters.mobile, created_on ]
             
             return new Promise( ( resolve, reject ) => {

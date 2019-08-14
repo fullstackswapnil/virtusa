@@ -8,6 +8,6 @@ const objUser           = new UserController();
 const objAuth           = new Authentication();
 
 UserRoute.get( "/users/list", objAuth.authentication, objUser.getAllUsers );
-UserRoute.post( "/user",      objAuth.authentication,  UserValidator.CreateUser, objUser.createUser );
+UserRoute.post( "/user",      objAuth.authentication, UserValidator.CreateUser, objUser.createUser );
 
 export default UserRoute;
